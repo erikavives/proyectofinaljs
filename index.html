@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Video Juegos</title>
+<!--font awesome-->
+    <script src="https://kit.fontawesome.com/df59baf6b8.js" crossorigin="anonymous"></script>
+    <!-- Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <button 
+    class="btn btn-primary mt-5 ms-5" 
+    type="button" data-bs-toggle="offcanvas" 
+    data-bs-target="#offcanvas" aria-controls="offcanvas">
+carrito 
+</button>
+<!-- Contenido de off canvas  -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvas" aria-labelledby="offcanvasLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title">Juegos</h5>
+        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <h3>El total de compra es de <span id="total"></span></h3>
+        <button class="btn colorBoton" id="verCarrito">Ver Carrito</button>
+        <button class="btn colorBoton" id="vaciarCarrito">Vaciar Carrito</button>
+        <button class="btn colorBoton mt-5" id="finalizarCompra">Finalizar Compra</button>
+        <div id="contenedorCarrito" class="row"></div>
+    </div>
+</div>
+    <h1 class="text-center">Tienda de VicioCordobe</h1>
+    <div id="listado"></div>
+    <div id="contenedorProductos" class="row"></div>
+
+
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.8/dist/sweetalert2.all.min.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
