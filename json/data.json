@@ -3,7 +3,7 @@
         "id":1,
         "nombre":"A Plaguetale Requiem",
         "precio": 10000,
-        "img":"/img/juego 1-min.jpg"
+        "img":"img/juego 1-min.jpg"
         },
     {
         "id":2,
