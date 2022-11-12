@@ -63,7 +63,7 @@ const agregarAlCarrito = (id) => {
   if (productoEnCarrito) {
     productoEnCarrito.cantidad++;
   } else {
-    carrito.push(producto); //es
+    carrito.push ({...producto, cantidad: 1} );
     localStorage.setItem("carrito", JSON.stringify(carrito));
   }
   calcularTotal();
@@ -150,3 +150,18 @@ const calcularTotal = () => {
   });
   total.innerHTML = `Total: $${totalCompra}`;
 };
+
+//finalizar compra
+const finalizarCompra= document.getElementById("finalizarCompra");
+finalizarCompra.addEventListener("click",() => {
+  eliminarTodoElCarrito();
+  Swal.fire({
+    title: 'Gracias por tu compra!',
+    text: 'Que lo difrutes, vuelva pronto.',
+    imageUrl: 'img/bannerlogotwitch.png',
+    imageWidth: 400,
+    imageHeight: 200,
+    imageAlt: 'Custom image',
+  })
+  localStorage.clear();
+});

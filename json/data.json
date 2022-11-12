@@ -2,37 +2,37 @@
     {
         "id":1,
         "nombre":"A Plaguetale Requiem",
-        "precio":10000,
+        "precio": 10000,
         "img":"/img/juego 1-min.jpg"
         },
     {
         "id":2,
         "nombre":"Gotham Knights",
-        "precio":18000,
+        "precio": 18000,
         "img":"img/juego 2-min.jpg"
     },
     {
         "id":3,
         "nombre":"Fortnite",
-        "precio":12500,
+        "precio": 12500,
         "img":"img/juego 3-min.jpg"
     },
     {
         "id":4,
         "nombre": "Dying Light 2",
-        "precio":15000,
+        "precio": 15000,
         "img":"img/juego 4-min.png"
     },
     {
         "id":5,
         "nombre":"Evil Dead",
-        "precio":10000,
+        "precio": 10000,
         "img":"img/juego 5-min.jpg"
     },
     {
         "id":6,
         "nombre":"Uncharted",
-        "precio":15000,
+        "precio": 15000,
         "img":"img/juego 6-min.png"
     }
 ]
